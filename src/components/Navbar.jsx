@@ -7,7 +7,7 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
 	padding: 10px 20px;
-`
+	display: flex; 
 
 const Left = styled.div``
 const Center = styled.div``
@@ -18,13 +18,13 @@ const Navbar = () => {
 	<Container>
 		<Wrapper>
 			<Left>
-				Left
+				I want
 			</Left>
 			<Center>
-				Center
+				A
 			</Center>
 			<Right>
-				Right
+				Sandwich
 			</Right>
 		</Wrapper>
 	</Container>
