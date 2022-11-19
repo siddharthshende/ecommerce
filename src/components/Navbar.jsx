@@ -3,22 +3,33 @@ import styled from 'styled-components'
 
 const Container = styled.div`
 	height: 60px;
-`	
+`;
 
 const Wrapper = styled.div`
 	padding: 10px 20px;
 	display: flex; 
+	justify-content: space-between;
+`;
 
-const Left = styled.div``
-const Center = styled.div``
-const Right = styled.div``
+const Left = styled.div`
+flex:1;`
+
+const Language = styled.span`
+	font-size: 14px;
+	cursor: pointer;
+`
+
+const Center = styled.div`
+flex:1;`
+const Right = styled.div`
+flex:1`
 
 const Navbar = () => {
   return (
 	<Container>
 		<Wrapper>
 			<Left>
-				I want
+				<Language>EN</Language>
 			</Left>
 			<Center>
 				A
@@ -28,7 +39,7 @@ const Navbar = () => {
 			</Right>
 		</Wrapper>
 	</Container>
-  )
-}
+  ); 
+};
 
-export default Navbar
+export default Navbar; 
